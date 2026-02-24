@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="inscrir.jpg" />
+  </head>
+  <body>
+    <form action="">
+      <div align="center">
+        <h1>Bienvenue chez Votre Pédiatre</h1>
+        <h4>Inscrivez-vous maintenant</h4>
+      </div>
+
+      <!-- Section Bébé initiale (toujours visible) -->
+      <div align="right" class="form-section" id="baby1">
+        <table>
+          <tr>
+            <td><h5>Information Bébé</h5></td>
+          </tr>
+          <tr>
+            <td><label for="P_bebe1">Nom et Prénom du Bébé*</label></td>
+            <td><input type="text" id="P_bebe1" /></td>
+          </tr>
+          <tr>
+            <td><label for="D_bebe1">Date de naissance*</label></td>
+            <td><input type="datetime-local" id="D_bebe1" /></td>
+            <td><label for="L_bebe1">Lieu de naissance*</label></td>
+            <td><input type="text" id="L_bebe1" /></td>
+          </tr>
+          <tr>
+            <td><label>Sexe*</label></td>
+            <td><input type="radio" name="sexe1" id="garcon1" /> Garçon</td>
+            <td><input type="radio" name="sexe1" id="fille1" /> Fille</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Section Bébé 2 (hidden par défaut) -->
+      <div align="right" class="form-section" id="baby2" hidden>
+        <table>
+          <tr>
+            <td><h5>Information Bébé</h5></td>
+          </tr>
+          <tr>
+            <td><label for="P_bebe2">Prénom du Bébé*</label></td>
+            <td><input type="text" id="P_bebe2" /></td>
+          </tr>
+          <tr>
+            <td><label for="D_bebe2">Date de naissance*</label></td>
+            <td><input type="datetime-local" id="D_bebe2" /></td>
+            <td><label for="L_bebe2">Lieu de naissance*</label></td>
+            <td><input type="text" id="L_bebe2" /></td>
+          </tr>
+          <tr>
+            <td><label>Sexe*</label></td>
+            <td><input type="radio" name="sexe2" id="garcon2" /> Garçon</td>
+            <td><input type="radio" name="sexe2" id="fille2" /> Fille</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Bouton pour afficher la section bébé cachée -->
+      <input
+        type="button"
+        id="add-baby"
+        style="margin-bottom: 20px"
+        value="Ajouter un autre Bébé"
+      />
+
+      <div align="center" class="form-section">
+        <table>
+          <tr>
+            <td><h5>Information Parent</h5></td>
+          </tr>
+          <tr>
+            <td><label for="P_parent">Nom et Prénom*</label></td>
+            <td><input type="tel" id="P_parent" /></td>
+          </tr>
+          <tr>
+            <td><label for="Adr_mail">Adress e-Mail</label></td>
+            <td><input type="email" name="Adr_mail" id="Adr_mail" /></td>
+          </tr>
+          <tr>
+            <td><label for="N_cin*">Numéro CIN*</label></td>
+            <td>
+              <input type="number" id="N_cin" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="N_cnam*">Numéro CNAM</label></td>
+            <td>
+              <input type="number" id="N_cin" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mdp">Mot de passe*</label></td>
+            <td><input type="password" name="mdp" id="mdp" /></td>
+          </tr>
+          <tr>
+            <td><label for="Conf_mdp">Confirmer le Mot de passe*</label></td>
+            <td><input type="password" name="Conf_mdp" id="Conf_mdp" /></td>
+          </tr>
+        </table>
+      </div>
+      <div align="right">
+        <input type="submit" value="Valider l'inscription" />
+        <input type="reset" value="Rénitialiser" />
+      </div>
+    </form>
+    <script src="inscrir.js"></script>
+  </body>
+</html>
