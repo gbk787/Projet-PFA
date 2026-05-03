@@ -1,0 +1,336 @@
+/* CONTENEUR PRINCIPAL */
+.bienvenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: 25px;
+    background: url('../images/rmv-bg.png') right -500px center / 1100px no-repeat, linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin: 0 70px;
+}
+
+/* PARTIE GAUCHE */
+.bienvenu-left {
+    max-width: 600px;
+    position: relative;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.bienvenu-left h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.bienvenu-left p {
+    color: #e0e7ff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    background: transparent;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #ddd;
+}
+
+.search-box button {
+    border: none;
+    background: white;
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* PARTIE DROITE */
+.bienvenu-right {
+    position: absolute;
+    right: 10px;
+}
+
+/* CARTES */
+.cards {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 180px;
+}
+
+.cards h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #e5e7eb;
+}
+
+.cards span {
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .bienvenu {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bienvenu-right {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/**************************partie conseils********************************/
+body {
+    font-family: Arial;
+    background: #f4f7fb;
+    margin: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container {
+    width: 93%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.age-bloc {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0;
+}
+
+/* TITRE */
+h2 {
+    color: var(--dark-blue);
+}
+
+/* AGES */
+.ages {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.age {
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--dark-blue);
+    border: 2px solid var(--primary-blue);
+    transition: 0.3s;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.age:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-blue);
+    background: #fefefe;
+}
+
+/* Version responsive : sur mobile, les cartes passent en colonne */
+@media (max-width: 600px) {
+    .ages {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .age {
+        padding: 14px;
+    }
+}
+
+
+/* HEADER */
+.header-box {
+    background: linear-gradient(90deg, var(--primary-blue), var(--dark-blue));
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* SECTIONS */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.section h4 {
+    color: var(--dark-blue);
+}
+
+.section p {
+    background: #e6f2f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* DANGER */
+.danger {
+    background: #fff5f5;
+}
+
+.danger p {
+    background: #ffdede;
+}
+
+/*************btn*****************/
+/* Bouton */
+.toggle-btn {
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 31px;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 1% 5%;
+}
+
+.toggle-btn:hover {
+    background-color: #1e4a63;
+}
+
+/* Cacher / montrer */
+.hidden {
+    display: none;
+}
+
+/* Section catégories */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5% 5%;
+
+}
+
+.category-card a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 2px solid #2c5f7c;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #f0f8ff;
+    color: #1C1F5A;
+    margin: 10px;
+}
+
+.category-card a:hover {
+    color: white;
+    background-color: var(--primary-blue);
+
+}
+
+/* Section âges */
+.age-section h2 {
+    margin-bottom: 15px;
+    color: #2c5f7c;
+}
+
+.age-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.age-card {
+    padding: 15px 25px;
+    border: 2px solid #2c5f7c;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #f0f8ff;
+}
+
+.age-card:hover {
+    background-color: #2c5f7c;
+    color: white;
+}
+
+/*************************************astuce-card.css**************************************************/
+
+/* Partie gauche */
+.content-left {
+    flex: 4.5;
+}
+
+/* Carte astuces */
+.content-right {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 3px solid var(--primary-blue);
+    position: sticky;
+    top: 20px;
+}
+
+.content-right h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-right ul {
+    padding-left: 15px;
+}
+
+.content-right li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}

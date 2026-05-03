@@ -1,0 +1,183 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, var(--dark-blue), var(--primary-blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: var(--primary-blue);
+}
+
+a {
+  margin-top: 1px;
+  text-decoration: none;
+  color: #195f70;
+}
+
+/* ===== Container ===== */
+.form-container {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Form ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Fieldset ===== */
+
+/* ===== Inputs ===== */
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 5px rgba(78, 141, 156, 0.5);
+}
+
+input::placeholder {
+  color: #aab8c2;
+}
+
+/* ===== Options ===== */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85em;
+  margin-bottom: 15px;
+}
+
+.login-options input {
+  margin-right: 5px;
+}
+
+/* ===== Links ===== */
+a {
+  color: #4e8d9c;
+  text-decoration: none;
+}
+
+.mdp_oublie:hover {
+  text-decoration: underline;
+}
+
+/* ===== Button ===== */
+input[type="submit"] {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f5278;
+}
+
+/* ===== Register link ===== */
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a2050;
+  margin: 0 0 4px;
+}
+
+.form-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.role-switcher {
+  display: flex;
+  background-color: #f0f4f8;
+  border-radius: 50px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+  gap: 4px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #6b7280;
+  transition: all 0.3s;
+}
+
+.role-btn.active {
+  background-color: var(--primary-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(78, 141, 156, 0.4);
+}

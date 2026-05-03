@@ -1,0 +1,178 @@
+        /* ── Badges statut ── */
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-attente {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .badge-approuve {
+            background: #d1e7dd;
+            color: #0f5132;
+        }
+
+        .badge-rejete {
+            background: #f8d7da;
+            color: #842029;
+        }
+
+        /* ── Boutons action ── */
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.8rem;
+            margin: 0 2px;
+        }
+
+        .btn-approve {
+            background: #d1e7dd;
+            color: #0f5132;
+        }
+
+        .btn-reject {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .btn-delete {
+            background: #f8d7da;
+            color: #842029;
+        }
+
+        .btn-action:hover {
+            opacity: 0.8;
+        }
+
+        /* ── Filtres statut ── */
+        .filter-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .filter-tab {
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            background: #fff;
+            font-size: 0.82rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: #555;
+            transition: all .2s;
+        }
+
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: #4DA8DA;
+            color: #fff;
+            border-color: #4DA8DA;
+        }
+
+        /* ── Commentaire ── */
+        .comment-cell {
+            max-width: 260px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #555;
+            font-size: 0.88rem;
+        }
+
+        /* ── Stars ── */
+        .stars {
+            color: #f5a623;
+            font-size: 0.85rem;
+        }
+
+        .fa-star.empty {
+            color: #ddd;
+        }
+
+        thead a {
+            text-decoration: none;
+            color: #4DA8DA;
+        }
+
+        .user-n {
+            display: flex;
+            align-items: center;
+            gap: 11px
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #EBF4F6;
+            color: #2E86AB;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .user-name {
+            font-weight: 700;
+            font-size: .88rem
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        thead {
+            background: #dfe3e8;
+            border-bottom: 2px solid #c7ccd1;
+        }
+
+        th {
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #5c6773;
+            white-space: nowrap;
+        }
+
+
+        td {
+            padding: 13px 16px;
+            font-size: .88rem;
+            color: var(--s600);
+            border-bottom: 1px solid var(--s100);
+            vertical-align: middle;
+        }
+
+
+        tr:last-child td {
+            border-bottom: none
+        }
+
+        tr {
+            transition: background .1s
+        }
+
+        tr:hover td {
+            background: #F0FDFA
+        }
